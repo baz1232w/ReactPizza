@@ -21,7 +21,7 @@ export const MainePage:React.FC<props> = ({items,isLoading,addToCart}) =>{
             <div className={s.items}>
                 {
                   new Array(1,2,3,4).map(el=>{
-                      return <SceletonItem/>
+                      return <SceletonItem key={el}/>
                   })
                 }
             </div>
