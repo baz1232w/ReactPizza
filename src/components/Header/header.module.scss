@@ -1,0 +1,162 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 49px 38px 40px 79px;
+  border-bottom: 3px solid #F7F7F7;
+
+  .mainLogo {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      img {
+        width: 38px;
+        height: 38px;
+        margin-right: 17px;
+      }
+    }
+
+    .title {
+      h1 {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29.23px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.50px;
+        color: #7B7B7B;
+      }
+    }
+  }
+  .searchArea{
+
+    display: flex;
+    gap: 70px;
+
+    @media (max-width: 780px) {
+      display: flex;
+      gap: 20px;
+    }
+
+    @media (max-width: 460px) {
+      justify-content: space-around;
+      gap: 5px;
+    }
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    
+  }
+  .cartButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;;
+    background-color: #FE5F1E;
+    border-radius: 30px;
+    text-align: center;
+
+    color: #fff;
+
+    gap: 10px;
+    cursor: pointer;
+
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+      background-color: #c44913;
+    }
+
+    .totalPrice, .cart {
+      display: inline-block;
+      line-height: 50px;
+
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .totalPrice {
+      margin-right: 13px;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 25px;
+
+        position: absolute;
+        background: rgba(255, 255, 255, 0.25);
+
+        right: -13px;
+        top: 12.5px;
+      }
+
+
+    }
+
+  }
+
+  @media (max-width: 780px){
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @media (max-width: 460px) {
+    padding: 10px 40px 40px 40px;
+  }
+
+}
+
+.search{
+  border: 1px solid rgba(166,166,166,50%);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  input{
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #7B7B7B;
+  }
+
+  .delete{
+    visibility: hidden;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .delete.active{
+    visibility: visible;
+  }
+
+  @media (max-width: 400px){
+    width: 200px;
+
+    input{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 400px){
+    width: 200px;
+
+    input{
+      font-size: 12px;
+
+    }
+  }
+
+}

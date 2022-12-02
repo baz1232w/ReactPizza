@@ -1,0 +1,114 @@
+.orderPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    width: 600px;
+    margin: 0px auto;
+    padding: 50px 0px;
+    height: 600px;
+
+}
+
+
+
+
+.orderPage input{
+    width: 300px;
+    font-size: 17px;
+    padding: 5px;
+}
+
+
+.orderPage form{
+    display: flex;
+    flex-direction: column;
+}
+
+.orderPage form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 20px;
+}
+
+.orderPage form label{
+    gap: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.orderPage form span{
+    width:290px;
+   font-size: 14px;
+}
+
+.btnOrder{
+    margin: 0 auto;
+    padding:10px;
+    border: 1px solid #FE5F1E;
+    background-color: #FE5F1E;
+    color: #fff;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.btnOrder.isFormValid {
+    background-color: #8D8D8D;
+    border-color: #7B7B7B;
+}
+
+.btnOrder.isFormValid:hover{
+    background-color: #8D8D8D;
+    border-color: #7B7B7B;
+    color: #ffffff;
+
+}
+
+.btnOrder:hover {
+    color: #FE5F1E;
+    background-color: white;
+}
+
+
+.total{
+    width:250px;
+}
+
+.totalPrice{
+    font-weight: 700;
+}
+
+
+@media(max-width: 600px){
+    .orderPage{
+        width: 300px;
+    }
+
+    .orderPage input{
+        width: 200px;
+        font-size: 17px;
+        padding: 5px;
+    }
+    .orderPage form{
+        align-items: center;
+    }
+
+    .btnOrder{
+        width: 200px;
+    }
+
+    .btnOrder.isFormValid{
+        width: 200px;
+    }
+
+    .orderPage form span{
+        width:200px;
+        font-size: 14px;
+    }
+}

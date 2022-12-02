@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {MainPageContainer} from "./components/MainePage/MainPageContainer";
+import {Header} from "./components/Header/Header";
+import {Route, Routes} from "react-router-dom";
+import {Cart} from "./components/Cart/Cart";
+import AboutPage from "./components/AboutPage/AboutPage";
+import {ErrorPage} from "./components/ErrorPage/ErrorPage";
+import {OrderPage} from "./components/OrderPage/OrderPage";
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={'container'} >
+        <Header/>
+        <Routes>
+            <Route path={'/'} element={<MainPageContainer/>}/>
+            <Route path={'/main'} element={<MainPageContainer/>}/>
+            <Route path={'/cart'} element={<Cart/>}/>
+            <Route path={'/main/:id'} element={<AboutPage/>}/>
+            <Route path={'/order'} element={<OrderPage/>}/>
+            <Route path={'*'} element={<ErrorPage/>}/>
+        </Routes>
     </div>
   );
 }

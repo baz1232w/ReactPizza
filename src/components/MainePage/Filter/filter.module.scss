@@ -1,0 +1,139 @@
+.filter {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .list {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 0px 9px;
+
+    li {
+      padding: 14px 32px;
+      background-color: #F9F9F9;
+      border-radius: 30px;
+
+      cursor: pointer;
+      transition: background-color .2s ease-in-out, color .2s ease-in-out;
+
+      &:hover {
+        background-color: #282828;
+        color: #fff;
+      }
+
+      &:active {
+        background-color: grey;
+      }
+
+      @media (max-width: 768px ){
+        flex-basis: 200px;
+        text-align: center;
+
+      }
+    }
+    .active{
+      background-color: #282828;
+      color: #fff;
+    }
+    
+    @media (max-width: 960px) {
+      margin: 20px 0px;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      gap:15px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .switcher {
+    position: relative;
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 0 8px;
+      cursor: pointer;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .toggle {
+      font-weight: 400;
+      color: #FE5F1E;
+      border-bottom: 1px dotted #FE5F1E;
+
+    }
+
+    .toggleSwitcher {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 30px;
+
+      ul{
+        background-color: #fff;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+      }
+
+
+
+
+      li {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 10px 22px 11px 14px;
+        cursor: pointer;
+        transition: background-color .2s ease-in-out, color .2s ease-in-out;
+
+        &:hover{
+          color:#FE5F1E;
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &:active{
+          color: #fff;
+          background: #FE5F1E;
+        }
+
+        &:last-child{
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+
+
+
+      }
+
+      li.active{
+        color:#FE5F1E;
+        font-weight: bold;
+        background: rgba(254, 95, 30, 0.05);
+      }
+    }
+    
+    @media (max-width: 960px) {
+      margin: 20px 0px;
+    }
+  }
+
+  .toggleSwitcher.block{
+    display: block;
+  }
+
+  @media (max-width: 960px) {
+    flex-wrap: wrap;
+  }
+  
+}
