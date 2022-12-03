@@ -9,7 +9,6 @@ export const SceletonItem = () => (
         viewBox="0 0 280 460"
         backgroundColor="#f3f3f3"
         foregroundColor="#ecebeb"
-        {...props}
     >
         <rect x="158" y="107" rx="0" ry="0" width="1" height="1" />
         <rect x="121" y="45" rx="0" ry="0" width="30" height="0" />
