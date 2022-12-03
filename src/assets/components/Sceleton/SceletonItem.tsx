@@ -1,11 +1,7 @@
 import React from "react"
 import ContentLoader from "react-content-loader"
 
-interface props {
-
-}
-
-export const SceletonItem:React.FC<props> = (props) => (
+export const SceletonItem = () => (
     <ContentLoader
         speed={2}
         width={280}
