@@ -2,7 +2,7 @@
   "items": [
     {
       "id": 0,
-      "imageUrl": "https://media.dodostatic.net/image/r:760x760/11ee7d612fc7b7fca5be822752bee1e5.jpeg",
+      "imageUrl": "https://media.dodostatic.net/image/r:760x760/11ee7d612fc7b7fca5be822752bee1e5.avif",
       "title": "Пепперони Фреш с перцем",
       "types": [
         0,
@@ -19,7 +19,7 @@
     },
     {
       "id": 1,
-      "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/2ffc31bb-132c-4c99-b894-53f7107a1441.jpg",
+      "imageUrl": "https://media.dodostatic.net/image/r:760x760/11ee7d612fc7b7fca5be822752bee1e5.avif",
       "title": "Сырная",
       "types": [
         0
